@@ -1,0 +1,9 @@
+<launch>
+
+    <node name="flexpak6_handler" pkg="flexpak6_handler" type="flexpak6_handler_node" output="screen">
+        <param name="path" value="/dev/ttyUSB3"/>
+    </node> 
+
+    <node name="enable_debug" pkg="flexpak6_handler" type="enable_debug.sh"/>
+
+</launch>
